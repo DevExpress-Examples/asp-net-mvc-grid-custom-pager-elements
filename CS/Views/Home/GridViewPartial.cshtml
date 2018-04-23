@@ -1,0 +1,34 @@
+@model System.Collections.IEnumerable
+
+@Html.DevExpress().GridView(settings => {
+    settings.Name = "GridView";
+    settings.KeyFieldName = "ProductID";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "GridViewPartial" };
+
+    settings.CustomActionRouteValues = new { Controller = "Home", Action = "GridViewCallbackPartial" };
+    
+    settings.Columns.Add("ProductID");
+    settings.Columns.Add("ProductName");
+    settings.Columns.Add("UnitPrice");
+    settings.Columns.Add("UnitsOnOrder");
+
+    settings.Settings.ShowFooter = true;
+    
+    settings.SetFooterRowTemplateContent(c => {
+        Html.RenderPartial("FooterRowPartial", c);
+    });
+
+    settings.BeforeGetCallbackResult += (s, e) => {
+        if (ViewData["pageSize"] != null) {
+            int pageSize = Convert.ToInt32(ViewData["pageSize"]);
+            MVCxGridView grid = (MVCxGridView)s;
+
+            if (pageSize == -1)
+                grid.SettingsPager.Mode = GridViewPagerMode.ShowAllRecords;
+            else {
+                grid.SettingsPager.Mode = GridViewPagerMode.ShowPager;
+                grid.SettingsPager.PageSize = pageSize;
+            }
+        }
+    };
+}).SetEditErrorText((string)ViewData["EditError"]).Bind(Model).GetHtml()
