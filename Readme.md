@@ -10,7 +10,7 @@
 <!-- default file list end -->
 # GridView - How to create a custom "Select Page Size" element with the "Show All Records" feature
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t190979)**
+**[[Run Online]](https://codecentral.devexpress.com/t190979/)**
 <!-- run online end -->
 
 
