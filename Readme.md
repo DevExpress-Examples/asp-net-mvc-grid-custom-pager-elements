@@ -3,7 +3,7 @@
 **[[Run Online]](https://codecentral.devexpress.com/t190979/)**
 <!-- run online end -->
 
-This example demonstrates how to create the grid's footer template, add a custom page size item to that template, and display the **Show All Records** button.
+This example demonstrates how to create the grid's footer template, add a custom page size item to the template, and display the **Show All Records** button.
 
 ![Custom page size item](customPager.png)
 
