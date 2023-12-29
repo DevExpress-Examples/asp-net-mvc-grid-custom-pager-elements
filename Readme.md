@@ -4,9 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Grid View for ASP.NET MVC - How to create a custom page size item with the Show All Records button
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128549872/)**
-<!-- run online end -->
 
 This example demonstrates how to create the grid's footer template, add a custom page size item to the template, and display the **Show All Records** button.
 
