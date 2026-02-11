@@ -57,7 +57,7 @@ You can also display the **Show All Records** button in the page size item of th
 * [FooterRowPartial.cshtml](./CS/Views/Home/FooterRowPartial.cshtml)
 * [GridViewPartial.cshtml](./CS/Views/Home/GridViewPartial.cshtml)
 <!-- feedback -->
-## Does This Example Address Your Development Requirements/Objectives?
+## Does this example address your development requirements/objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-mvc-grid-custom-pager-elements&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-mvc-grid-custom-pager-elements&~~~was_helpful=no)
 
